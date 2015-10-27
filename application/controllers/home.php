@@ -11,7 +11,7 @@ class Home extends CI_Controller
 		$this->load->helper('security');
 	}
 
-	function index()
+	function index() 
 	{
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
